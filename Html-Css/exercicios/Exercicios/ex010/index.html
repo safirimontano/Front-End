@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens</title>
+</head>
+<body>
+<h1>imagens dinâmicas</h1>
+<p>São imagens que se adptam. Não fiz as imagens porque aqui não da pra editar imagens.</p>
+<!--A TAG PICTURES PERMITE QUE ALÉM DE IMAGENS SEJAM CRIADOS VÁRIOS SRC / FONTES. A IMAGEM -->
+<picture><!--EM CASO DA IMAGEM ESTAR MUITO GRANDE O SITE IRÁ ADPTAR AUTOMATICAMENTE COM AS TAGS:-->
+    <source media="(max-width:700px )" srcset="IMAGEM P" type="image/">
+<source media="(max-width:1000px)" srcset="FOTO M" type="image/"> 
+<img src="IMAGEM G" alt="IMAGEM G"> <!--COM ISSO O SITE VAI ABRIR A IMAGEM, MAS SE A TELA FOR MENOR QUE 1000 ELE VAI ABRIR A M E SE FOR MENOR QUE 700 ABRIRÁ A IMAGEM P. COMEÇOU A CRIAR PELO G E ACIMA VAI COLOCANDO ATÉ O P USANDO O "SOURCE MEDIA TYPE"-->
+<!--MAX-WIDTH É LARGURA.-->
+
+</picture>
+</body>
+</html>
