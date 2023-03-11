@@ -1,0 +1,266 @@
+*{
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+.estrutura{
+   margin: 0 auto;
+}
+
+/******HEADER*******/
+.header{
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.menu{
+    display: flex;
+    justify-content: flex-end;
+   
+    align-items: center;
+}
+
+.menu-top{
+     display: flex;
+     justify-items: center;
+     align-items: center;
+}
+
+.header .menu a{
+    text-decoration: none;
+    color: black;
+    margin: 15px;
+    font-size: 14px;
+}
+
+.menu-top a:hover{
+    text-decoration: underline;
+}
+
+
+.apps{
+     display: flex;
+     justify-items: center;
+     align-items: center;
+     padding: 10px;
+     width: 15px;
+     height: 15px;
+     background-color: rgb(255, 255, 255);
+     border-radius: 10px;
+     cursor: pointer; /*coloca a mãozinha no cursor*/
+     transition: 0.5s;
+     transition-delay: 0.8s;
+}
+
+.apps.active{
+    width: 150px;
+    height: 400px;
+    transition-delay: 0s;
+}
+.apps.active span{
+    width: 45px;
+    height: 45px;
+    background:#ffffff;
+    transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+       
+}
+
+.apps span ion-icon{
+    transition: 0.5s ;
+    font-size: 0em;
+}
+
+.apps.active span ion-icon{
+    font-size: 1.35em;
+    color: rgb(2, 2, 2);
+}
+
+.apps.active span:hover ion-icon{
+    color: rgb(161, 159, 159);
+   
+}
+
+.profile img{
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+}
+ #perfil{
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+}
+
+#perfil:hover{
+    background-color: rgb(233, 230, 230);
+}
+
+/*****CONTENT*******/
+
+.content{
+    margin: 30px;
+    margin-bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 10px;
+    
+}
+
+.logo img{
+    max-width: 270px;
+    
+}
+
+/****BARRA INTEIRA DE PESQUISA*****/
+.search{  
+    display: flex;
+    border: 1px solid #dfe1e5;
+    border-radius: 30px;
+    margin: 10px 400px auto;
+    justify-content: space-around;
+    align-content: center; 
+    width: 500px;
+}
+
+.search:hover{
+    box-shadow: 2px 4px 5px #d6d6d6;
+}
+/*INPUT*/
+.barra-pesquisa{
+    max-width: 900px;
+    margin: 0 auto; 
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+input{
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+    border: 0 solid white;
+    font-size: 20px;
+    flex-wrap: wrap;
+    
+    
+}
+
+input:focus{ /*PARA TIRAR A BORDA AO CLICAR*/
+    outline: none;   
+}
+
+/*IMAGEM LUPA*/
+.search .lupe{
+    max-width: 20px;
+    max-height: 20px;
+    padding: 4px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 9px;
+}
+
+/*IMAGEM MICROFONE*/
+.search .mic{
+    max-width: 30px;
+    margin-right: 10px;
+    padding: 4px;
+}
+
+#microfone{
+    background-color: white;
+    border: 0 solid white;
+    border-radius: 50%;
+}
+
+/*IMAGEM TECLADO*/
+.search .keyb{
+    max-width: 30px;
+    padding: 4px;
+}
+#teclado{
+    background-color: white;
+    border: 0 solid white;
+}
+
+.buttons{
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.buttons .pesquisa{
+    max-width: 200px ;
+    margin-right: 20px;
+    display: flex;
+    border: 1px solid #f8f9fa;
+    max-height: 30px;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 14px;
+    align-items: center;
+    background-color: #f8f9fa;
+}
+.buttons .pesquisa:hover{
+    border: 0.5px solid lightgray;
+    cursor: pointer;
+}
+
+.buttons .sorte{
+    max-width: 200px ;
+    max-height: 30px;
+    display: flex;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    padding: 20px;
+    font-size: 14px;
+    align-items: center;
+    background-color: #f8f9fa;
+    cursor: pointer;
+    
+}
+.buttons .sorte:hover{
+    border: 0.5px solid lightgray;
+}
+
+/********FOOTER**********/
+
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(236, 234, 234);
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.footer a{
+    text-decoration: none;
+    color: rgb(82, 81, 81);
+    margin-right: 20px;
+    text-align: center;
+
+}
+
+.footer .footer-itens{
+    margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;
+}
+
+
