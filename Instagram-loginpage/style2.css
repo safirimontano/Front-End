@@ -1,0 +1,249 @@
+body{
+    background-color: #fafafa;
+    font-family: sans-serif;
+    display: block;
+    --borda:rgb(207, 207, 207);
+}
+.container{      
+    max-width: 350px;
+    max-height: 560px;
+    margin: 0 auto;
+    justify-content: center;
+    align-content: center;
+}
+
+
+.login-area{
+    
+    background-color: white;
+    margin-top: 50px;
+}
+
+.login-area2{
+    border: 0.5px solid var(--borda);
+    margin-bottom: 20px;
+}
+/*******
+**LOGO**/
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 20px 5px 20px;
+    background-color: white;
+
+}
+
+.logo img{
+    max-width: 200px;
+    
+}
+
+/********FORM******/
+
+.form{
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+    
+}
+
+.formulario{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    justify-content: center;
+    align-content: center;
+}
+.form-nome{
+    border: 0.5px solid var(--borda);
+    border-radius: 5px;
+    width: 270px;
+    justify-content: center;
+    margin: 5px 50px 5px 50px;
+    
+}
+input{
+    border: none;
+    width: 250px;
+}
+
+.span-nome{
+    color: rgb(155, 153, 153);
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+.span-senha{
+    color: rgb(148, 145, 145);
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+
+}
+
+.form-senha{
+    border: 0.5px solid var(--borda);
+    border-radius: 5px;
+    width: 270px;
+    justify-content: center;
+    margin: 0px 50px 5px 50px;
+}
+
+/********BOTÃO DE ENTRAR*******/
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: #0095f6;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    width: 270px;
+    margin: 10px;
+}
+
+.box-button{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-bottom: 10px;
+}
+
+/********Or DIVISER********/
+
+.ou{
+    display: flex;
+    justify-content: center;
+    color: rgb(92, 91, 91);
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+/*******ENTRAR PELO FACEBOOK**********/
+
+.fb{
+    display: flex;
+    justify-content: center;
+}
+
+.fb span a img{
+    max-width: 14px;
+    margin-right: 5px;
+}
+
+.fb span a{
+    text-decoration: none;
+    font-size: 15px;
+    color:#385190;
+}
+
+.fb span{
+    display: flex;
+    justify-content: center;
+}
+
+/********ESQUECEU A SENHA?*********/
+
+.forgot{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+    margin-top: 10px;
+}
+.forgot a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 13px;
+    color: rgb(2, 2, 61);
+}
+
+/*******NÃO TEM CONTA? CADASTRE-SE*******/
+
+
+.account{
+    display: flex;
+    justify-content: center;
+    border: 0.5px solid var(--borda);
+    background-color: white;
+}
+
+.account p{
+    
+    text-align: center;
+    margin:10px;
+    padding: 10px;
+}
+
+.account p span a{
+    text-decoration: none;
+}
+
+/******BAIXE O APP******/
+
+.obtenha p{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.gettheapp{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.google{
+    max-width: 150px;
+    justify-items: center;
+}
+
+.apple{
+    max-width: 150px;
+    justify-items: center;
+    margin-right: 5px;    
+}
+
+/******FOOTER******/
+
+.footer{
+    margin-top: 25px;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    padding: 10px;
+    justify-content: center;
+}
+
+.footer ul li{
+    list-style: none;
+}
+
+.footer ul li a{
+    text-decoration: none;
+    color: lightgray;
+    margin: 5px;    
+    font-size: 14px;
+}
+
+.final-text{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.final-text p{
+    margin: 15px;
+    font-size: 13px;
+}
+
