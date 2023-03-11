@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(27, 27, 27);
+}
+
+.caixa{
+    position: relative;
+    width: 70px;
+    height: 70px;
+    background-color: rgb(73, 71, 71);
+    border-radius: 10px;
+    cursor: pointer; /*coloca a mãozinha no cursor*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    transition-delay: 0.8s;
+}
+
+.caixa.active{
+    width: 200px;
+    height: 200px;
+    transition-delay: 0s;
+    
+}
+
+.caixa span{
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
+    transform: translate(calc(12px * var(--x)),calc(12px * var(--y)));
+    transition: transform 0.5s,width 0.5s,height 0.5s; /*não entedi o porque do transform aqui*/
+    transition-delay: calc(0.1s * var(--i));
+}
+.caixa.active span{
+    width: 45px;
+    height: 45px;
+    background:white;
+    transform: translate(calc(60px * var(--x)),calc(60px * var(--y)));
+       
+}
+
+.caixa span ion-icon{
+    transition: 0.5s ;
+    font-size: 0em;
+}
+
+.caixa.active span ion-icon{
+    font-size: 1.35em;
+    color: black;
+}
+
+.caixa.active span:hover ion-icon{
+    color: rgb(161, 159, 159);
+   
+}

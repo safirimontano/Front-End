@@ -1,0 +1,64 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color:lavender;
+}
+
+.content{
+    display: flex;
+    justify-content: center;
+}
+
+.ball{
+    position: absolute;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    align-self: center;    
+    background-color: aqua;
+    animation: animate 3s ease-in-out infinite;
+    animation-delay:1.5s;
+}
+
+.ball1{
+    position: absolute;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    align-self: center;    
+    background-color: rgb(9, 255, 0);
+    animation: animate 3s ease-in-out infinite;
+    animation-delay:1s;
+}
+
+.ball2{
+    position: absolute;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    align-self: center;    
+    background-color: rgb(98, 0, 255);
+    animation: animate 3s ease-in-out infinite;
+    animation-delay:0.5s;
+}
+.ball3{
+    position: absolute;
+    width: 30px;
+    height:30px;
+    border-radius: 50%;
+    align-self: center;    
+    background-color: rgb(255, 136, 0);
+    animation: animate 3s ease-in-out infinite;
+    animation-delay:0.1s;
+}
+
+@keyframes animate{
+    0%, 100%{
+        transform: translate(-100px)
+    }
+    50%{
+        transform: translate(100px)
+    }
+}

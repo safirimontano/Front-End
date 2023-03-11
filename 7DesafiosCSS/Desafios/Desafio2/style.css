@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing:border-box;
+}
+
+.liquid{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(163, 148, 151);
+}
+
+.liquid h2{
+    position:absolute;
+    font-size: 100pt;
+}
+.liquid h2:nth-child(1){
+    color: white;
+    position:absolute;
+    font-size: 100pt;
+    text-shadow: -2px 2px 0px rgb(138, 132, 216),
+    4px 4px 0px rgb(63, 92, 170),
+    6px 6px 0px rgb(95, 157, 207),
+    8px 8px 0px rgb(8, 52, 77),
+    18px 18px 20px rgb(33, 18, 56),
+    
+}
+.liquid h2:nth-child(2){
+    color: rgb(48, 48, 197);
+    opacity: 0.5;
+    animation: animate 3s ease-in-out infinite;
+}
+.liquid h2:nth-child(3){
+    color: rgb(48, 48, 197);
+    opacity: 0.5;
+    animation: animate 6s ease-in-out infinite;
+}
+.liquid h2:nth-child(4){
+    color: rgb(48, 48, 197);
+    animation: animate 4s ease-in-out infinite;
+}
+
+
+
+@keyframes animate{
+    0%, 100%{
+        clip-path: polygon(0 10%, 12% 41%, 26% 63%, 43% 66%, 64% 64%, 82% 64%, 100% 40%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 65%, 13% 63%, 30% 56%, 45% 50%, 62% 56%, 83% 61%, 100% 49%, 100% 100%, 0 100%);
+
+      }
+}
